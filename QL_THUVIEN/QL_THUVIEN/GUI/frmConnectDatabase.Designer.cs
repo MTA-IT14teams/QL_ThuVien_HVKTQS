@@ -134,7 +134,7 @@
             this.txtTenCSDL.Name = "txtTenCSDL";
             this.txtTenCSDL.Size = new System.Drawing.Size(187, 20);
             this.txtTenCSDL.TabIndex = 9;
-            this.txtTenCSDL.Text = "QL_THUVIEN";
+            this.txtTenCSDL.Text = "ThuVien";
             this.txtTenCSDL.TextChanged += new System.EventHandler(this.txtTenCSDL_TextChanged);
             // 
             // btnDangNhap
@@ -177,7 +177,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtTenMayChu);
             this.Controls.Add(this.label1);
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "frmConnectDatabase";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConnectDatabase";
