@@ -72,11 +72,11 @@ namespace QL_ThuVien.GUI
 
         private void txtUserName_KeyPress(object sender, KeyPressEventArgs e)
         {
-            var regex = new Regex(@"[^a-zA-Z0-9\s]");
-            if (regex.IsMatch(e.KeyChar.ToString()))
-            {
-                e.Handled = true;
-            }
+            //var regex = new Regex(@"[^a-zA-Z0-9\s]");
+            //if (regex.IsMatch(e.KeyChar.ToString()))
+            //{
+            //    e.Handled = true;
+            //}
             
         }
 
@@ -110,7 +110,10 @@ namespace QL_ThuVien.GUI
 
         private void txtPassWord_KeyDown(object sender, KeyEventArgs e)
         {
-            btnLogin_Click(null, null);
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLogin_Click(null, null);
+            }
         }
     }
 }
