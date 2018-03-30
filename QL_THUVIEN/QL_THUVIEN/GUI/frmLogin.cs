@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Configuration;
+using System.Data.SqlClient;
+using System.Data;
+using System.Text.RegularExpressions;
+using System.IO;
 
-
-namespace QL_THUVIEN.GUI
+namespace QL_ThuVien.GUI
 {
     public partial class frmLogin : Form
     {
@@ -18,113 +20,97 @@ namespace QL_THUVIEN.GUI
         {
             InitializeComponent();
         }
-        private void KiemTra()
+
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("test");
             try
             {
-                if (txtUsername.Text.Trim() == "")
-                {
-                    MessageBox.Show("Bạn phải nhập tên đăng nhập!");
-                    ActiveControl = txtUsername;
-                    return;
-                }
-                if (txtPassword.Text.Trim() == "")
-                {
-                    MessageBox.Show("Bạn phải nhập mật khẩu!");
-                    ActiveControl = txtPassword;
-                    return;
-                }
-
-                SqlConnection conn = new SqlConnection(CONNECT.ConnectString.StringConnect);
+                SqlConnection conn = new SqlConnection(DTO.ConnectDatabase.ConnectionString);
                 conn.Open();
-                string sql = "select *from tblUser where Username = '" + txtUsername.Text.Trim() + "' and  Password = '" + txtPassword.Text.Trim() + "'";
+
+                string sql = "select *from tbl_Users where UserName = '" + txtUserName.Text.Trim() + "' and PassWord = '" + txtPassWord.Text.Trim() + "'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
+                //cmd.ExecuteNonQuery();
+
                 SqlDataReader dta = cmd.ExecuteReader();
 
                 if (dta.Read() == true)
                 {
-                    frmMain m = new frmMain();
+                    if (cbSaveInfo.Checked == true)
+                    {
+                        using (StreamWriter wr = new StreamWriter("info.ini"))
+                        {
+                            wr.WriteLine(txtUserName.Text.Trim());
+                            wr.WriteLine(txtPassWord.Text.Trim());
+                            wr.Close();
+                        }
+                    }
+                    else
+                    {
+                        File.Delete("info.ini");
+                    }
+                    GUI.frmMain m = new frmMain();
                     this.Hide();
                     m.ShowDialog();
-                    this.Show();
-                    //MessageBox.Show("Hoàn thành công việc của mình trước 26/3/2018", "Deadline");
                 }
                 else
                 {
-                    MessageBox.Show("Không đăng nhập được! Kiểm tra lại thông tin tài khoản!");
+                    MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!");
                 }
-
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Không đăng nhập được! Kiểm tra lại thông tin tài khoản!" + ex.Message);
+                MessageBox.Show(ex.Message);
             }
+            
         }
 
-        
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblUser_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnDangnhap_Click(object sender, EventArgs e)
-        {
-            KiemTra();
-        }
-
-        private void btnThoat_Click(object sender, EventArgs e)
+        private void frmLogin_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
 
-        private void txtUsername_TextChanged(object sender, EventArgs e)
+        private void txtUserName_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            var regex = new Regex(@"[^a-zA-Z0-9\s]");
+            if (regex.IsMatch(e.KeyChar.ToString()))
+            {
+                e.Handled = true;
+            }
+            
         }
 
-        private void cbLuuTK_CheckedChanged(object sender, EventArgs e)
+        private void cbShowPass_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbHienMK.Checked == true)
+            txtPassWord.UseSystemPasswordChar = false;
+        }
+
+        private void cbSaveInfo_CheckedChanged(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            if (File.Exists("info.ini"))
             {
-                txtPassword.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                txtPassword.UseSystemPasswordChar = true;
+                using (StreamReader re = new StreamReader("info.ini"))
+                {
+                    txtUserName.Text = re.ReadLine();
+                    txtPassWord.Text = re.ReadLine();
+                }
             }
         }
 
-        private void cbHienMK_CheckedChanged(object sender, EventArgs e)
+        private void lbForgetAccount_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (cbHienMK.Checked == true)
-            {
-                txtPassword.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                txtPassword.UseSystemPasswordChar = true;
-            }
+            MessageBox.Show("Liên hệ với QTV để lấy lại mật khẩu!");
+        }
+
+        private void txtPassWord_KeyDown(object sender, KeyEventArgs e)
+        {
+            btnLogin_Click(null, null);
         }
     }
 }

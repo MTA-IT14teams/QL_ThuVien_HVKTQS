@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.IO;
 
-namespace QL_THUVIEN.GUI
+namespace QL_ThuVien.GUI
 {
     public partial class frmConnectDatabase : Form
     {
@@ -23,32 +25,17 @@ namespace QL_THUVIEN.GUI
             txtMK.Enabled = false;
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void cbxChonTaiKhoan_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbxChonTaiKhoan.SelectedIndex == 0)
             {
-                CONNECT.ConnectString.WinAuthentication = true;
+                DTO.ConnectDatabase.WindowAuthentication = true;
                 txtTenDangNhap.Enabled = false;
                 txtMK.Enabled = false;
             }
-            if (cbxChonTaiKhoan.SelectedIndex == 1)
+            else
             {
-                CONNECT.ConnectString.WinAuthentication = false;
+                DTO.ConnectDatabase.WindowAuthentication = false;
                 txtTenDangNhap.Enabled = true;
                 txtMK.Enabled = true;
             }
@@ -56,60 +43,103 @@ namespace QL_THUVIEN.GUI
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
+
+            if (txtTenMayChu.Text.Trim() == "")
+            {
+                MessageBox.Show("Bạn phải nhập tên máy chủ");
+                ActiveControl = txtTenMayChu;
+                return;
+            }
+
+            if (txtTenCSDL.Text.Trim() == "")
+            {
+                MessageBox.Show("Bạn phải nhập tên CSDL");
+                ActiveControl = txtTenCSDL;
+                return;
+            }
+            
+            string connect="";
+
+            DTO.ConnectDatabase.SeverName = txtTenMayChu.Text.Trim();
+            DTO.ConnectDatabase.DatabaseName = txtTenCSDL.Text.Trim();
+
+            //using (StreamWriter write = new StreamWriter("config"))
+            //{
+            //    write.WriteLine(DTO.ConnectDatabase.SeverName);
+            //    write.WriteLine(DTO.ConnectDatabase.DatabaseName);
+            //}
+
+            if (DTO.ConnectDatabase.WindowAuthentication == true)
+            {
+                DTO.ConnectDatabase.TaoChuoiKetNoi();
+                connect = DTO.ConnectDatabase.ConnectionString;
+            }
+            else
+            {
+                if (txtTenDangNhap.Text.Trim() == "")
+                {
+                    MessageBox.Show("Bạn phải nhập tên đăng nhập");
+                    ActiveControl = txtTenDangNhap;
+                    return;
+                }
+                if (txtMK.Text.Trim() == "")
+                {
+                    MessageBox.Show("Bạn phải nhập mật khẩu");
+                    ActiveControl = txtMK;
+                    return;
+                }
+                DTO.ConnectDatabase.UserName = txtTenDangNhap.Text.Trim();
+                DTO.ConnectDatabase.PassWord = txtMK.Text.Trim();
+                DTO.ConnectDatabase.TaoChuoiKetNoi();
+                
+                connect = DTO.ConnectDatabase.ConnectionString;
+            }
+
+            //MessageBox.Show(connect);
             try
             {
-                if (txtTenMayChu.Text.Trim() == "")
-                {
-                    MessageBox.Show("Bạn phải nhập tên máy chủ!");
-                    ActiveControl = txtTenMayChu;
-                    return;
-                }
-                else if (txtTenCSDL.Text.Trim() == "")
-                {
-                    MessageBox.Show("Bạn phải nhập tên CSDL!");
-                    ActiveControl = txtTenCSDL;
-                    return;
-                }
+                SqlConnection conn = new SqlConnection(connect);
+                conn.Open();
 
-                CONNECT.ConnectString.ServerName = txtTenMayChu.Text.Trim();
-                CONNECT.ConnectString.DatabaseName = txtTenCSDL.Text.Trim();
-
-                if (cbxChonTaiKhoan.SelectedIndex == 0)
+                if (conn.State == ConnectionState.Open)
                 {
-                    CONNECT.ConnectString.WinAuthentication = true;
-                    CONNECT.ConnectString.TaoChuoiKetNoi();
-                }
-                else
-                {
-                    CONNECT.ConnectString.WinAuthentication = false;
-                    CONNECT.ConnectString.TaoChuoiKetNoi();
-                }
+                    //MessageBox.Show("Kết nối thành công");
+                    using (StreamWriter write = new StreamWriter("config"))
+                    {
+                        write.WriteLine(DTO.ConnectDatabase.SeverName);
+                        write.WriteLine(DTO.ConnectDatabase.DatabaseName);
+                        write.WriteLine(DTO.ConnectDatabase.UserName);
+                        write.WriteLine(DTO.ConnectDatabase.PassWord);
+                    }
 
+                    GUI.frmLogin lg = new GUI.frmLogin();
+                    this.Hide();
+                    lg.ShowDialog();
+                    
 
-                CONNECT.Connect.myconnect = new SqlConnection(CONNECT.ConnectString.StringConnect);
-                CONNECT.Connect.openConnect();
-
-                if (CONNECT.Connect.myconnect.State == ConnectionState.Open)
-                {
-                    MessageBox.Show("Bạn đã kết nối thành công đến cơ sở dữ liệu " + txtTenCSDL.Text);
-                    this.Close();
-                    this.Dispose();
                 }
                 else
                 {
-                    MessageBox.Show("Không kết nối được đến cơ sở dữ liệu!");
-                    return;
+                    MessageBox.Show("Kết nối thất bại");
                 }
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+
         }
 
-        private void txtTenCSDL_TextChanged(object sender, EventArgs e)
+        private void btnThoat_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
+
+        private void frmConnectDatabase_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+
     }
 }

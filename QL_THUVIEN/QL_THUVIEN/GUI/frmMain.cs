@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
-namespace QL_THUVIEN.GUI
+namespace QL_ThuVien.GUI
 {
     public partial class frmMain : Form
     {
@@ -17,61 +18,66 @@ namespace QL_THUVIEN.GUI
             InitializeComponent();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Close();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
+            Application.Exit();
         }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            ucBackGround uv = new ucBackGround();
-            splitContainer1.Panel2.Controls.Clear();
-            splitContainer1.Panel2.Controls.Add(uv);
-            uv.Dock = DockStyle.Fill;
-        }
+            GUI.Intro it = new Intro();
+            it.MdiParent = this;
+            it.WindowState = FormWindowState.Maximized;
+            it.Show();
 
-        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnExit_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnThongTinMuonTra_Click(object sender, EventArgs e)
-        {
-            ucThongTinMuonTra uv = new ucThongTinMuonTra();
-            splitContainer1.Panel2.Controls.Clear();
-            splitContainer1.Panel2.Controls.Add(uv);
-            uv.Dock = DockStyle.Fill;
-        }
-
-        private void btnDocGia_Click(object sender, EventArgs e)
-        {
-            ucDocGia uv = new ucDocGia();
-            splitContainer1.Panel2.Controls.Clear();
-            splitContainer1.Panel2.Controls.Add(uv);
-            uv.Dock = DockStyle.Fill;
+            string ten = "";
+            using (StreamReader rd = new StreamReader("info.ini"))
+            {
+                ten = rd.ReadLine();
+            }
+            lblTen.Text = "Chào bạn: " + ten;
         }
 
         private void btnDauSach_Click(object sender, EventArgs e)
         {
-            ucDauSach uv = new ucDauSach();
-            splitContainer1.Panel2.Controls.Clear();
-            splitContainer1.Panel2.Controls.Add(uv);
-            uv.Dock = DockStyle.Fill;
+            GUI.frmDauSach ds = new frmDauSach();
+            ds.MdiParent = this;
+            ds.WindowState = FormWindowState.Maximized;
+            ds.Show();
         }
 
-        private void btnHome_Click(object sender, EventArgs e)
+        private void btnDocGia_Click(object sender, EventArgs e)
         {
-            frmMain_Load(sender, e);
+            GUI.frmDocGia dg = new frmDocGia();
+            dg.MdiParent = this;
+            dg.WindowState = FormWindowState.Maximized;
+            dg.Show();
+        }
+
+        private void btnMuonTra_Click(object sender, EventArgs e)
+        {
+            GUI.frmMuontra mt = new frmMuontra();
+            mt.MdiParent = this;
+            mt.WindowState = FormWindowState.Maximized;
+            mt.Show();
+        }
+
+        private void trangChủToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GUI.Intro it = new Intro();
+            it.MdiParent = this;
+            it.WindowState = FormWindowState.Maximized;
+            it.Show();
+        }
+
+        private void btnXoaThongTin_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn xóa thông tin tài khoản đã lưu không?", "Xóa thông tin đã lưu", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                File.Delete("config");
+                File.Delete("info.ini");
+                MessageBox.Show("Đã xóa thông tin tài khoản!");
+            }
         }
     }
 }

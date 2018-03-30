@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{48D50BED-01EA-4C04-944A-428692450014}</ProjectGuid>
+    <ProjectGuid>{8DE3911A-BE96-42AD-AABA-EFE95A552328}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>QL_THUVIEN</RootNamespace>
-    <AssemblyName>QL_THUVIEN</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RootNamespace>QL_ThuVien</RootNamespace>
+    <AssemblyName>QL_ThuVien</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -32,8 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,13 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CONNECT\Connect.cs" />
-    <Compile Include="CONNECT\ConnectString.cs" />
+    <Compile Include="DTO\ConnectDatabase.cs" />
     <Compile Include="GUI\frmConnectDatabase.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\frmConnectDatabase.Designer.cs">
       <DependentUpon>frmConnectDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmDauSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmDauSach.Designer.cs">
+      <DependentUpon>frmDauSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmDocGia.Designer.cs">
+      <DependentUpon>frmDocGia.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmLogin.cs">
       <SubType>Form</SubType>
@@ -64,34 +77,28 @@
     <Compile Include="GUI\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\ucBackGround.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="GUI\frmMuontra.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\ucBackGround.Designer.cs">
-      <DependentUpon>ucBackGround.cs</DependentUpon>
+    <Compile Include="GUI\frmMuontra.Designer.cs">
+      <DependentUpon>frmMuontra.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\ucDauSach.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="GUI\Intro.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\ucDauSach.Designer.cs">
-      <DependentUpon>ucDauSach.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\ucDocGia.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\ucDocGia.Designer.cs">
-      <DependentUpon>ucDocGia.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\ucThongTinMuonTra.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\ucThongTinMuonTra.Designer.cs">
-      <DependentUpon>ucThongTinMuonTra.cs</DependentUpon>
+    <Compile Include="GUI\Intro.Designer.cs">
+      <DependentUpon>Intro.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\frmConnectDatabase.resx">
       <DependentUpon>frmConnectDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmDauSach.resx">
+      <DependentUpon>frmDauSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmDocGia.resx">
+      <DependentUpon>frmDocGia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -99,14 +106,11 @@
     <EmbeddedResource Include="GUI\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\ucBackGround.resx">
-      <DependentUpon>ucBackGround.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\frmMuontra.resx">
+      <DependentUpon>frmMuontra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\ucDauSach.resx">
-      <DependentUpon>ucDauSach.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\ucDocGia.resx">
-      <DependentUpon>ucDocGia.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\Intro.resx">
+      <DependentUpon>Intro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -116,6 +120,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -127,7 +132,33 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_simpline_27_2305630.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picthuvien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_home_173033.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_applications-system_118839.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_library_49592.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_data_transport_44670.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Help_1493288.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_sign-info_299086.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

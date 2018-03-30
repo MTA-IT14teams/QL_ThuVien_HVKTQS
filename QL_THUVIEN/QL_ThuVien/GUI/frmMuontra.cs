@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QL_THUVIEN.GUI
+namespace QL_ThuVien.GUI
 {
-    public partial class ucDauSach : UserControl
+    public partial class frmMuontra : Form
     {
-        public ucDauSach()
+        public frmMuontra()
         {
             InitializeComponent();
         }

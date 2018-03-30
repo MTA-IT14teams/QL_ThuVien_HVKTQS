@@ -1,26 +1,15 @@
-C:\Users\ADMIN\Desktop\QL_THUVIEN\QL_THUVIEN\bin\Debug\QL_THUVIEN.exe
-C:\Users\ADMIN\Desktop\QL_THUVIEN\QL_THUVIEN\bin\Debug\QL_THUVIEN.pdb
-C:\Users\ADMIN\Desktop\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.csprojResolveAssemblyReference.cache
-C:\Users\ADMIN\Desktop\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.GUI.frmConnectDatabase.resources
-C:\Users\ADMIN\Desktop\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.GUI.frmLogin.resources
-C:\Users\ADMIN\Desktop\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.Properties.Resources.resources
-C:\Users\ADMIN\Desktop\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.csproj.GenerateResource.Cache
-C:\Users\ADMIN\Desktop\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.exe
-C:\Users\ADMIN\Desktop\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.pdb
-C:\Users\ADMIN\Desktop\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.GUI.frmMain.resources
-C:\Users\ADMIN\Desktop\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.GUI.ucBackGround.resources
-C:\Users\ADMIN\Desktop\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.GUI.ucDauSach.resources
-C:\Users\ADMIN\Desktop\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.GUI.ucDocGia.resources
-C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.exe
-C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.pdb
-C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_THUVIEN\bin\Debug\QL_THUVIEN.exe
-C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_THUVIEN\bin\Debug\QL_THUVIEN.pdb
-C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.csprojResolveAssemblyReference.cache
-C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.GUI.frmConnectDatabase.resources
-C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.GUI.frmLogin.resources
-C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.GUI.frmMain.resources
-C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.GUI.ucBackGround.resources
-C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.GUI.ucDauSach.resources
-C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.GUI.ucDocGia.resources
-C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.Properties.Resources.resources
-C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Thuc Tap Nhom\QL_GV_HS_THPT\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_THUVIEN\obj\Debug\QL_THUVIEN.csproj.GenerateResource.Cache
+c:\users\vuman\documents\visual studio 2013\Projects\QL_ThuVien\QL_ThuVien\bin\Debug\QL_ThuVien.exe.config
+c:\users\vuman\documents\visual studio 2013\Projects\QL_ThuVien\QL_ThuVien\obj\Debug\QL_ThuVien.csprojResolveAssemblyReference.cache
+c:\users\vuman\documents\visual studio 2013\Projects\QL_ThuVien\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmConnectDatabase.resources
+c:\users\vuman\documents\visual studio 2013\Projects\QL_ThuVien\QL_ThuVien\obj\Debug\QL_ThuVien.Properties.Resources.resources
+c:\users\vuman\documents\visual studio 2013\Projects\QL_ThuVien\QL_ThuVien\obj\Debug\QL_ThuVien.csproj.GenerateResource.Cache
+c:\users\vuman\documents\visual studio 2013\Projects\QL_ThuVien\QL_ThuVien\bin\Debug\QL_ThuVien.exe
+c:\users\vuman\documents\visual studio 2013\Projects\QL_ThuVien\QL_ThuVien\bin\Debug\QL_ThuVien.pdb
+c:\users\vuman\documents\visual studio 2013\Projects\QL_ThuVien\QL_ThuVien\obj\Debug\QL_ThuVien.exe
+c:\users\vuman\documents\visual studio 2013\Projects\QL_ThuVien\QL_ThuVien\obj\Debug\QL_ThuVien.pdb
+c:\users\vuman\documents\visual studio 2013\Projects\QL_ThuVien\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmLogin.resources
+c:\users\vuman\documents\visual studio 2013\Projects\QL_ThuVien\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmMain.resources
+c:\users\vuman\documents\visual studio 2013\Projects\QL_ThuVien\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmDauSach.resources
+c:\users\vuman\documents\visual studio 2013\Projects\QL_ThuVien\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.Intro.resources
+c:\users\vuman\documents\visual studio 2013\Projects\QL_ThuVien\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmMuontra.resources
+c:\users\vuman\documents\visual studio 2013\Projects\QL_ThuVien\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmDocGia.resources
