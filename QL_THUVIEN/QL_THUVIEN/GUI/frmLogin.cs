@@ -30,12 +30,13 @@ namespace QL_ThuVien.GUI
 
                 string sql = "select *from tbl_Users where UserName = '" + txtUserName.Text.Trim() + "' and PassWord = '" + txtPassWord.Text.Trim() + "'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
-                //cmd.ExecuteNonQuery();
 
                 SqlDataReader dta = cmd.ExecuteReader();
 
                 if (dta.Read() == true)
                 {
+                    DTO.ConnectDatabase.NameLogin = txtUserName.Text.Trim();
+
                     if (cbSaveInfo.Checked == true)
                     {
                         using (StreamWriter wr = new StreamWriter("info.ini"))
@@ -57,6 +58,9 @@ namespace QL_ThuVien.GUI
                 {
                     MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!");
                 }
+
+                
+
             }
             catch (Exception ex)
             {
@@ -82,7 +86,14 @@ namespace QL_ThuVien.GUI
 
         private void cbShowPass_CheckedChanged(object sender, EventArgs e)
         {
-            txtPassWord.UseSystemPasswordChar = false;
+            if (cbShowPass.Checked == true)
+            {
+                txtPassWord.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtPassWord.UseSystemPasswordChar = true;
+            }
         }
 
         private void cbSaveInfo_CheckedChanged(object sender, EventArgs e)

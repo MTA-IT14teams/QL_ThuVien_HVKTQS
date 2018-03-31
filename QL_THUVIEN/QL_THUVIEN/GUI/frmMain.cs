@@ -30,12 +30,7 @@ namespace QL_ThuVien.GUI
             it.WindowState = FormWindowState.Maximized;
             it.Show();
 
-            string ten = "";
-            using (StreamReader rd = new StreamReader("info.ini"))
-            {
-                ten = rd.ReadLine();
-            }
-            lblTen.Text = "Chào bạn: " + ten;
+            lblTen.Text = "Chào bạn: " +DTO.ConnectDatabase.NameLogin;
         }
 
         private void btnDauSach_Click(object sender, EventArgs e)
@@ -72,7 +67,7 @@ namespace QL_ThuVien.GUI
 
         private void btnXoaThongTin_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn có muốn xóa thông tin tài khoản đã lưu không?", "Xóa thông tin đã lưu", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Xóa thông tin tài khoản đã lưu? \nBạn sẽ phải thiết đặt lại thông tin trong lần đăng nhập tới!", "Xóa thông tin đã lưu", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 File.Delete("config");
                 File.Delete("info.ini");

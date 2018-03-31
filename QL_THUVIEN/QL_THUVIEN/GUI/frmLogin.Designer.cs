@@ -62,7 +62,7 @@
             this.btnLogin.Location = new System.Drawing.Point(13, 279);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(244, 44);
+            this.btnLogin.Size = new System.Drawing.Size(244, 33);
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -74,7 +74,7 @@
             this.cbSaveInfo.Checked = true;
             this.cbSaveInfo.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbSaveInfo.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cbSaveInfo.Location = new System.Drawing.Point(13, 391);
+            this.cbSaveInfo.Location = new System.Drawing.Point(7, 343);
             this.cbSaveInfo.Margin = new System.Windows.Forms.Padding(4);
             this.cbSaveInfo.Name = "cbSaveInfo";
             this.cbSaveInfo.Size = new System.Drawing.Size(115, 21);
@@ -86,7 +86,7 @@
             // cbShowPass
             // 
             this.cbShowPass.AutoSize = true;
-            this.cbShowPass.Location = new System.Drawing.Point(151, 390);
+            this.cbShowPass.Location = new System.Drawing.Point(145, 342);
             this.cbShowPass.Margin = new System.Windows.Forms.Padding(4);
             this.cbShowPass.Name = "cbShowPass";
             this.cbShowPass.Size = new System.Drawing.Size(113, 20);
@@ -98,7 +98,7 @@
             // lbForgetAccount
             // 
             this.lbForgetAccount.AutoSize = true;
-            this.lbForgetAccount.Location = new System.Drawing.Point(139, 341);
+            this.lbForgetAccount.Location = new System.Drawing.Point(140, 250);
             this.lbForgetAccount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbForgetAccount.Name = "lbForgetAccount";
             this.lbForgetAccount.Size = new System.Drawing.Size(118, 16);
@@ -121,7 +121,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(270, 424);
+            this.ClientSize = new System.Drawing.Size(270, 380);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lbForgetAccount);
             this.Controls.Add(this.cbShowPass);
