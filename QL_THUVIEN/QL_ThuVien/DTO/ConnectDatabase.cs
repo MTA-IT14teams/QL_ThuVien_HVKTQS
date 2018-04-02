@@ -8,9 +8,10 @@ namespace QL_ThuVien.DTO
 {
     public static class ConnectDatabase
     {
+        public static string NameLogin=""; //tên đăng nhập vào hệ thống sau khi đăng nhập xong sql 
         public static string SeverName = "";
         public static string DatabaseName = "";
-        public static string UserName = "";
+        public static string UserName = ""; //tên đăng nhập sql
         public static string PassWord;
         public static bool WindowAuthentication = true;
 
