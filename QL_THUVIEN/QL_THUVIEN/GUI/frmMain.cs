@@ -25,6 +25,7 @@ namespace QL_ThuVien.GUI
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            timer1.Enabled = true;
             GUI.Intro it = new Intro();
             it.MdiParent = this;
             it.WindowState = FormWindowState.Maximized;
@@ -78,6 +79,11 @@ namespace QL_ThuVien.GUI
                 File.Delete("info.ini");
                 MessageBox.Show("Đã xóa thông tin tài khoản!");
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblTime.Text = DateTime.Now.ToString();
         }
     }
 }
