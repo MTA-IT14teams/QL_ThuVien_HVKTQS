@@ -48,6 +48,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmDocGia";
             this.Text = "Quản Lý Độc Giả";
+            this.Load += new System.EventHandler(this.frmDocGia_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

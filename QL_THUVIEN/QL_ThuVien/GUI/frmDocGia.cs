@@ -16,5 +16,10 @@ namespace QL_ThuVien.GUI
         {
             InitializeComponent();
         }
+
+        private void frmDocGia_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
