@@ -68,7 +68,7 @@ namespace QL_ThuVien.GUI
         }
         private void LoadPMT()
         {
-            dgvChiTietMuon.DataSource = xuat_PMTcuaDG(txtMDG1.Text.Trim());
+            dgvPhieuMuonTra.DataSource = xuat_PMTcuaDG(txtMDG1.Text.Trim());
         }
         private void LoadCTM()
         {
