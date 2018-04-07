@@ -105,12 +105,12 @@ namespace QL_ThuVien.GUI
 
         private void LoadTxtPMT()
         {
-            txtSoPMT.Text = dgvChiTietMuon.CurrentRow.Cells[0].Value.ToString().Trim();
-            dateLap.Value = Convert.ToDateTime(dgvChiTietMuon.CurrentRow.Cells[1].Value);
-            dateHtra.Value = Convert.ToDateTime(dgvChiTietMuon.CurrentRow.Cells[2].Value);
+            txtSoPMT.Text = dgvPhieuMuonTra.CurrentRow.Cells[0].Value.ToString().Trim();
+            dateLap.Value = Convert.ToDateTime(dgvPhieuMuonTra.CurrentRow.Cells[1].Value);
+            dateHtra.Value = Convert.ToDateTime(dgvPhieuMuonTra.CurrentRow.Cells[2].Value);
             try
             {
-                dateTra.Value = Convert.ToDateTime(dgvChiTietMuon.CurrentRow.Cells[3].Value);
+                dateTra.Value = Convert.ToDateTime(dgvPhieuMuonTra.CurrentRow.Cells[3].Value);
                 dateTra.Format = DateTimePickerFormat.Short;
             }
             catch
@@ -118,14 +118,15 @@ namespace QL_ThuVien.GUI
                 dateTra.Value = dateLap.Value;
                 dateTra.Format = DateTimePickerFormat.Custom;
             }
-            txtMDG2.Text = dgvChiTietMuon.CurrentRow.Cells[4].Value.ToString().Trim();
-            txtMTT.Text = dgvChiTietMuon.CurrentRow.Cells[5].Value.ToString().Trim();
+            txtMDG2.Text = dgvPhieuMuonTra.CurrentRow.Cells[4].Value.ToString().Trim();
+            txtMTT.Text = dgvPhieuMuonTra.CurrentRow.Cells[5].Value.ToString().Trim();
         }
         private void dgvPhieuMuonTra_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
             btnSua.Enabled = true;
             //btnXoa.Active = true;
             khoa_PMT();
+            //mo_PMT();
             LoadTxtPMT();
             LoadCTM();
         }
@@ -138,13 +139,71 @@ namespace QL_ThuVien.GUI
         }
 
 
-
         private void btnSua_Click_1(object sender, EventArgs e)
         {
             btnXoa.Text = "Hủy";
             mo_PMT();
         }
 
-       
+        private void XoaDG()
+        {
+            txtTenDG.Clear();
+            txtNgaySinh.Clear();
+            txtSDT.Clear();
+            rdbNam.Checked = true;
+            txtLoai.Clear();
+        }
+
+        private void XoaPMT()
+        {
+            dgvPhieuMuonTra.DataSource = null;
+        }
+        private void XoaCTM()
+        {
+            dgvChiTietMuon.DataSource = null;
+        }
+        private void XoaTxtPMT()
+        {
+            txtSoPMT.Clear();
+            txtMDG2.Clear();
+            txtMTT.Clear();
+            dateLap.Format = DateTimePickerFormat.Short;
+            dateHtra.Format = DateTimePickerFormat.Short;
+            dateTra.Format = DateTimePickerFormat.Short;
+        }
+
+        private void btnMuon_Click(object sender, EventArgs e)
+        {
+            if (txtMDG1.Text.Trim() != "")
+            {
+                PhieuMuon.maDG = txtMDG1.Text;
+                new PhieuMuon().ShowDialog();
+                XoaCTM();
+                XoaTxtPMT();
+                khoa_PMT();
+                LoadPMT();
+                btnSua.Enabled = false;
+            }
+            else
+                MessageBox.Show("Mã độc giả sai hoặc độc giả không được mượn sách!");
+        }
+
+        // định dạng cho ngày
+        private void dateTra_ValueChanged(object sender, EventArgs e)
+        {
+            if (DateTime.Compare(dateLap.Value, dateTra.Value) == 0)
+                dateTra.Format = DateTimePickerFormat.Custom;
+            else
+                dateTra.Format = DateTimePickerFormat.Short;
+        }
+
+        private void dateLap_ValueChanged(object sender, EventArgs e)
+        {
+            if (dateTra.Text == "")
+                dateTra.Value = dateLap.Value;
+        }
+
+
+
     }
 }
