@@ -357,6 +357,44 @@ namespace QL_ThuVien.GUI
                 btnSua.Enabled = false;
             }
         }
-        
+
+        private void btnTra_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DateTime ngayTra, ngayHTra, ngayLap;
+                if (dateTra.Text == " ")
+                {
+                    SoPMT = txtSoPMT.Text.Trim();
+                    MaDG = txtMDG2.Text.Trim();
+                    MaTT = txtMTT.Text.Trim();
+                    ngayTra = DateTime.Today;
+                    ngayHTra = dateHtra.Value;
+                    ngayLap = dateLap.Value;
+                    if (DateTime.Compare(ngayLap, ngayTra) == 0) throw new Exception();
+
+                    if (sua_PMT() == 1)
+                    {
+                        tinhTien_PMT(SoPMT);
+                        LoadCTM();
+                        LoadPMT();
+                        MessageBox.Show("Tra thanh cong");
+                        ChiTietMuon.soPMT = txtSoPMT.Text.Trim();
+                        ChiTietMuon.maDG = txtMDG2.Text.Trim();
+                        ChiTietMuon.ngayLap = dateLap.Value.Year.ToString() + "-" + dateLap.Value.Month.ToString() + "-" + dateLap.Value.Day.ToString();
+                        ChiTietMuon.ngayHtra = dateHtra.Value.Year.ToString() + "-" + dateHtra.Value.Month.ToString() + "-" + dateHtra.Value.Day.ToString();
+                        ChiTietMuon.ngayTra = (DateTime.Compare(ngayLap, ngayTra) != 0) ? ngayTra.ToShortDateString() : "";
+                        new ChiTietMuon().Show();
+                    }
+                    else throw new Exception();
+
+                }
+                else throw new Exception();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Không trả được");
+            }
+        }
     }
 }

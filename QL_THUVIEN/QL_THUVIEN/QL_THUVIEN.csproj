@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="DTO\ConnectDatabase.cs" />
     <Compile Include="DTO\MuonSach.cs" />
+    <Compile Include="GUI\ChiTietMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChiTietMuon.Designer.cs">
+      <DependentUpon>ChiTietMuon.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmConnectDatabase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\ChiTietMuon.resx">
+      <DependentUpon>ChiTietMuon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmConnectDatabase.resx">
       <DependentUpon>frmConnectDatabase.cs</DependentUpon>
     </EmbeddedResource>

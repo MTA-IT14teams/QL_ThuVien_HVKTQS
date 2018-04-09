@@ -120,6 +120,7 @@
             this.btnTra.Text = "Trả sách";
             this.btnTra.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTra.UseVisualStyleBackColor = true;
+            this.btnTra.Click += new System.EventHandler(this.btnTra_Click);
             // 
             // btnMuon
             // 
