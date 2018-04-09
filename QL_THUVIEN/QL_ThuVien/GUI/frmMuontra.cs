@@ -13,6 +13,16 @@ namespace QL_ThuVien.GUI
 {
     public partial class frmMuontra : Form
     {
+
+        private int nhay = -1;
+        private string SoPMT;
+        private string NgayLap;
+        private string NgayHTra;
+        private string NgayTra;
+        private string MaDG;
+        private string MaTT;
+        SqlConnection conn = new SqlConnection(DTO.ConnectDatabase.ConnectionString);
+
         public frmMuontra()
         {
             InitializeComponent();
@@ -138,13 +148,6 @@ namespace QL_ThuVien.GUI
 
         }
 
-
-        private void btnSua_Click_1(object sender, EventArgs e)
-        {
-            btnXoa.Text = "Hủy";
-            mo_PMT();
-        }
-
         private void XoaDG()
         {
             txtTenDG.Clear();
@@ -198,8 +201,162 @@ namespace QL_ThuVien.GUI
             if (dateTra.Text == "")
                 dateTra.Value = dateLap.Value;
         }
+        private void clearCTM()
+        {
+            dgvPhieuMuonTra.DataSource = null;
+        }
+        private void clearTxtPMT()
+        {
+            txtSoPMT.Clear();
+            txtMDG2.Clear();
+            txtMTT.Clear();
+            dateLap.Format = DateTimePickerFormat.Short;
+            dateHtra.Format = DateTimePickerFormat.Short;
+            dateTra.Format = DateTimePickerFormat.Short;
+        }
+        private void disablePMT()
+        {
+            txtSoPMT.Enabled = false;
+            txtMDG2.Enabled = false;
+            txtMTT.Enabled = false;
+            dateHtra.Enabled = false;
+            dateLap.Enabled = false;
+            dateTra.Enabled = false;
+        }
+        private int ExecuteNonQuery1(string proc, SqlParameter[] para)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = proc;
+                cmd.CommandType = CommandType.StoredProcedure;
+                if (para != null)
+                    cmd.Parameters.AddRange(para);
 
+                int val = cmd.ExecuteNonQuery();
+                conn.Close();
+                return val;
+            }
+            catch (SqlException)
+            {
+                return 0;
+            }
+        }
 
+        private void tinhTien_PMT(string SoPMT)
+        {
+            ExecuteNonQuery1("tinhTien_PMT", new SqlParameter[] { new SqlParameter("@soPMT", SoPMT) });
+        }
+        private int sua_PMT()
+        {
+            SoPMT = txtSoPMT.Text.Trim();
+            MaDG = txtMDG2.Text.Trim();
+            MaTT = txtMTT.Text.Trim();
+            NgayLap = dateLap.Value.Year.ToString() + "-" +
+                dateLap.Value.Month.ToString() + "-" + dateLap.Value.Day.ToString();
+            NgayHTra = dateHtra.Value.Year.ToString() + "-" +
+                dateHtra.Value.Month.ToString() + "-" + dateHtra.Value.Day.ToString();
+            NgayTra = dateTra.Value.Year.ToString() + "-" +
+                dateTra.Value.Month.ToString() + "-" + dateTra.Value.Day.ToString();
 
+            SqlParameter[] para = new SqlParameter[]
+                    {
+                        new SqlParameter("@sopmt", SoPMT),
+                        new SqlParameter("@ngaylappmt", NgayLap),
+                        new SqlParameter("@ngayhtra", NgayHTra),
+                        new SqlParameter("@ngaytra",NgayTra),
+                        new SqlParameter("@madg", MaDG),
+                        new SqlParameter("@matt", MaTT),
+
+                      };
+            return ExecuteNonQuery1("sua_PMT", para);
+
+        }
+        private void btnGhiNhan_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (nhay == 1)//nut btnSua hoat dong
+                {
+                    SoPMT = txtSoPMT.Text.Trim();
+                    //MaDG = txtMDG2.Text.Trim();
+                    //MaTT = txtMTT.Text.Trim();
+                    //NgayLap = dateLap.Value.Year.ToString() + "-" +
+                    //    dateLap.Value.Month.ToString() + "-" + dateLap.Value.Day.ToString();
+                    //NgayHTra = dateHtra.Value.Year.ToString() + "-" +
+                    //    dateHtra.Value.Month.ToString() + "-" + dateHtra.Value.Day.ToString();
+                    //NgayTra = dateTra.Value.Year.ToString() + "-" +
+                    //    dateTra.Value.Month.ToString() + "-" + dateTra.Value.Day.ToString();
+
+                   
+                    if (sua_PMT()==1)
+                    {
+                        tinhTien_PMT(SoPMT);
+                        clearCTM();
+                        LoadPMT();
+                        MessageBox.Show("Sua thanh cong");
+                    }
+                    
+                }
+                else throw new Exception();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                btnXoa.Text = "Xoá";
+                nhay = 1;   //nut btnXoa hoatdong
+                clearTxtPMT();
+                disablePMT();
+                btnSua.Enabled = false;
+                LoadDG();
+                LoadCTM();
+            }
+        }
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            nhay = 1;
+            btnXoa.Text = "Hủy";
+            mo_PMT();
+        }
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (nhay == 1)
+            {
+                clearTxtPMT();
+                disablePMT();
+                nhay = 2;
+                btnXoa.Text = "Xóa";
+                btnSua.Enabled = false;
+            }
+            else
+            {
+                int xoa;
+                SqlParameter[] para = new SqlParameter[]
+                {
+                    new SqlParameter("@sopmt",txtSoPMT.Text.Trim())
+                };
+                xoa = ExecuteNonQuery1("xoa_PMT", para);
+                if (xoa > 0)
+                {
+                    MessageBox.Show("Xoá thành công");
+                }
+                else
+                    MessageBox.Show("Không xóa được");
+                clearCTM();
+                clearTxtPMT();
+                disablePMT();
+                LoadPMT();
+                LoadDG();
+                LoadCTM();
+                btnSua.Enabled = false;
+            }
+        }
+        
     }
 }

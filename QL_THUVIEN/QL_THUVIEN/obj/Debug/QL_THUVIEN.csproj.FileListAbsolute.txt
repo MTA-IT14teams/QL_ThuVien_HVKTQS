@@ -45,3 +45,20 @@ E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\bin\Debug\QL_ThuVien.e
 E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\bin\Debug\QL_ThuVien.pdb
 E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.PhieuMuon.resources
 E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.ThemSachMuon.resources
+E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\bin\Debug\QL_ThuVien.exe.config
+E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.exe
+E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.pdb
+E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\bin\Debug\QL_ThuVien.exe
+E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\bin\Debug\QL_ThuVien.pdb
+E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.csprojResolveAssemblyReference.cache
+E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmConnectDatabase.resources
+E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmDauSach.resources
+E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmDocGia.resources
+E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmLogin.resources
+E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmMain.resources
+E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmMuontra.resources
+E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.Intro.resources
+E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.PhieuMuon.resources
+E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.ThemSachMuon.resources
+E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.Properties.Resources.resources
+E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.csproj.GenerateResource.Cache

@@ -331,6 +331,7 @@
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -344,7 +345,7 @@
             this.btnSua.Text = "Sửa";
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click_1);
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnGhiNhan
             // 
@@ -358,6 +359,7 @@
             this.btnGhiNhan.Text = "Ghi nhận";
             this.btnGhiNhan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnGhiNhan.UseVisualStyleBackColor = true;
+            this.btnGhiNhan.Click += new System.EventHandler(this.btnGhiNhan_Click);
             // 
             // dateTra
             // 
@@ -533,19 +535,19 @@
             // hỏngToolStripMenuItem1
             // 
             this.hỏngToolStripMenuItem1.Name = "hỏngToolStripMenuItem1";
-            this.hỏngToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.hỏngToolStripMenuItem1.Size = new System.Drawing.Size(115, 22);
             this.hỏngToolStripMenuItem1.Text = "Hỏng";
             // 
             // mấtToolStripMenuItem1
             // 
             this.mấtToolStripMenuItem1.Name = "mấtToolStripMenuItem1";
-            this.mấtToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.mấtToolStripMenuItem1.Size = new System.Drawing.Size(115, 22);
             this.mấtToolStripMenuItem1.Text = "Mất";
             // 
             // bịRáchToolStripMenuItem
             // 
             this.bịRáchToolStripMenuItem.Name = "bịRáchToolStripMenuItem";
-            this.bịRáchToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.bịRáchToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.bịRáchToolStripMenuItem.Text = "Bị rách";
             // 
             // frmMuontra
