@@ -29,16 +29,17 @@
         private void InitializeComponent()
         {
             this.labErr = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.dgvCTM = new System.Windows.Forms.DataGridView();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnFinish = new System.Windows.Forms.Button();
+            this.btnKetThuc = new System.Windows.Forms.Button();
             this.txtTienCoc = new System.Windows.Forms.TextBox();
             this.txtMCS = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtTienTra = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTM)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,16 +52,17 @@
             this.labErr.Size = new System.Drawing.Size(0, 13);
             this.labErr.TabIndex = 64;
             // 
-            // btnAdd
+            // btnThem
             // 
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(432, 134);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 41);
-            this.btnAdd.TabIndex = 63;
-            this.btnAdd.TabStop = false;
-            this.btnAdd.Text = "Thêm";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Location = new System.Drawing.Point(432, 173);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(75, 41);
+            this.btnThem.TabIndex = 63;
+            this.btnThem.TabStop = false;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // dgvCTM
             // 
@@ -69,7 +71,7 @@
             this.dgvCTM.AllowUserToResizeRows = false;
             this.dgvCTM.BackgroundColor = System.Drawing.Color.White;
             this.dgvCTM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvCTM.Location = new System.Drawing.Point(29, 198);
+            this.dgvCTM.Location = new System.Drawing.Point(29, 225);
             this.dgvCTM.MultiSelect = false;
             this.dgvCTM.Name = "dgvCTM";
             this.dgvCTM.ReadOnly = true;
@@ -79,45 +81,34 @@
             this.dgvCTM.TabIndex = 62;
             this.dgvCTM.TabStop = false;
             // 
-            // btnCancel
+            // btnKetThuc
             // 
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(316, 428);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 34);
-            this.btnCancel.TabIndex = 61;
-            this.btnCancel.TabStop = false;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            // 
-            // btnFinish
-            // 
-            this.btnFinish.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFinish.Location = new System.Drawing.Point(432, 428);
-            this.btnFinish.Name = "btnFinish";
-            this.btnFinish.Size = new System.Drawing.Size(75, 34);
-            this.btnFinish.TabIndex = 60;
-            this.btnFinish.TabStop = false;
-            this.btnFinish.Text = "Finish";
-            this.btnFinish.UseVisualStyleBackColor = true;
+            this.btnKetThuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKetThuc.Location = new System.Drawing.Point(432, 446);
+            this.btnKetThuc.Name = "btnKetThuc";
+            this.btnKetThuc.Size = new System.Drawing.Size(75, 34);
+            this.btnKetThuc.TabIndex = 60;
+            this.btnKetThuc.TabStop = false;
+            this.btnKetThuc.Text = "Kết Thúc";
+            this.btnKetThuc.UseVisualStyleBackColor = true;
+            this.btnKetThuc.Click += new System.EventHandler(this.btnFinish_Click);
             // 
             // txtTienCoc
             // 
-            this.txtTienCoc.Enabled = false;
             this.txtTienCoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTienCoc.Location = new System.Drawing.Point(61, 154);
+            this.txtTienCoc.Location = new System.Drawing.Point(132, 134);
             this.txtTienCoc.MaxLength = 10;
             this.txtTienCoc.Name = "txtTienCoc";
-            this.txtTienCoc.Size = new System.Drawing.Size(191, 21);
+            this.txtTienCoc.Size = new System.Drawing.Size(259, 21);
             this.txtTienCoc.TabIndex = 56;
             // 
             // txtMCS
             // 
             this.txtMCS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMCS.Location = new System.Drawing.Point(61, 93);
+            this.txtMCS.Location = new System.Drawing.Point(132, 83);
             this.txtMCS.MaxLength = 10;
             this.txtMCS.Name = "txtMCS";
-            this.txtMCS.Size = new System.Drawing.Size(191, 21);
+            this.txtMCS.Size = new System.Drawing.Size(259, 21);
             this.txtMCS.TabIndex = 55;
             this.txtMCS.TextChanged += new System.EventHandler(this.txtMCS_TextChanged);
             // 
@@ -125,7 +116,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(58, 75);
+            this.label12.Location = new System.Drawing.Point(129, 65);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(84, 15);
             this.label12.TabIndex = 59;
@@ -136,7 +127,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label13.Location = new System.Drawing.Point(126, 24);
+            this.label13.Location = new System.Drawing.Point(126, 19);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(278, 31);
             this.label13.TabIndex = 58;
@@ -154,23 +145,43 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(58, 134);
+            this.label4.Location = new System.Drawing.Point(129, 114);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 15);
             this.label4.TabIndex = 65;
             this.label4.Text = "Tiền cọc";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(129, 168);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 15);
+            this.label1.TabIndex = 67;
+            this.label1.Text = "Tiền thanh toán";
+            // 
+            // txtTienTra
+            // 
+            this.txtTienTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTienTra.Location = new System.Drawing.Point(132, 193);
+            this.txtTienTra.MaxLength = 10;
+            this.txtTienTra.Name = "txtTienTra";
+            this.txtTienTra.Size = new System.Drawing.Size(259, 21);
+            this.txtTienTra.TabIndex = 66;
+            // 
             // ThemSachMuon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(541, 488);
+            this.ClientSize = new System.Drawing.Size(531, 488);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtTienTra);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.labErr);
-            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnThem);
             this.Controls.Add(this.dgvCTM);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnFinish);
+            this.Controls.Add(this.btnKetThuc);
             this.Controls.Add(this.txtTienCoc);
             this.Controls.Add(this.txtMCS);
             this.Controls.Add(this.label12);
@@ -178,6 +189,7 @@
             this.Controls.Add(this.label14);
             this.Name = "ThemSachMuon";
             this.Text = "ThemSachMuon";
+            this.Load += new System.EventHandler(this.ThemSachMuon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTM)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -186,15 +198,16 @@
 
         #endregion
         private System.Windows.Forms.Label labErr;
-        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.DataGridView dgvCTM;
-        private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnFinish;
+        private System.Windows.Forms.Button btnKetThuc;
         private System.Windows.Forms.TextBox txtTienCoc;
         private System.Windows.Forms.TextBox txtMCS;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtTienTra;
     }
 }

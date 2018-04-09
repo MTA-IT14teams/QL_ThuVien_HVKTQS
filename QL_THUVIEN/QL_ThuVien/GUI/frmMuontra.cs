@@ -176,14 +176,9 @@ namespace QL_ThuVien.GUI
         {
             if (txtMDG1.Text.Trim() != "")
             {
-                PhieuMuon.maDG = txtMDG1.Text;
-                new PhieuMuon().ShowDialog();
-                XoaCTM();
-                XoaTxtPMT();
-                khoa_PMT();
-                LoadPMT();
-                btnSua.Enabled = false;
-                this.Hide();
+                DTO.MuonSach.MaDG = txtMDG1.Text.Trim();
+                PhieuMuon pm = new PhieuMuon();
+                pm.ShowDialog();
             }
             else
                 MessageBox.Show("Mã độc giả sai hoặc độc giả không được mượn sách!");

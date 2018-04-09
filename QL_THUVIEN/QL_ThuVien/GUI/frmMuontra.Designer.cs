@@ -274,7 +274,7 @@
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(41, 275);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(480, 320);
+            this.groupBox4.Size = new System.Drawing.Size(480, 247);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Phiếu mượn trả";
@@ -284,13 +284,12 @@
             this.dgvPhieuMuonTra.AllowUserToAddRows = false;
             this.dgvPhieuMuonTra.AllowUserToDeleteRows = false;
             this.dgvPhieuMuonTra.AllowUserToResizeColumns = false;
-            this.dgvPhieuMuonTra.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPhieuMuonTra.Location = new System.Drawing.Point(3, 17);
             this.dgvPhieuMuonTra.MultiSelect = false;
             this.dgvPhieuMuonTra.Name = "dgvPhieuMuonTra";
             this.dgvPhieuMuonTra.ReadOnly = true;
             this.dgvPhieuMuonTra.RowHeadersVisible = false;
-            this.dgvPhieuMuonTra.Size = new System.Drawing.Size(474, 300);
+            this.dgvPhieuMuonTra.Size = new System.Drawing.Size(474, 214);
             this.dgvPhieuMuonTra.TabIndex = 5;
             this.dgvPhieuMuonTra.TabStop = false;
             this.dgvPhieuMuonTra.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPhieuMuonTra_CellClick_1);
@@ -468,9 +467,9 @@
             // dgvChiTietMuon
             // 
             this.dgvChiTietMuon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvChiTietMuon.Location = new System.Drawing.Point(21, 19);
+            this.dgvChiTietMuon.Location = new System.Drawing.Point(14, 19);
             this.dgvChiTietMuon.Name = "dgvChiTietMuon";
-            this.dgvChiTietMuon.Size = new System.Drawing.Size(434, 281);
+            this.dgvChiTietMuon.Size = new System.Drawing.Size(441, 195);
             this.dgvChiTietMuon.TabIndex = 5;
             // 
             // groupBox5
@@ -479,7 +478,7 @@
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(534, 292);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(476, 310);
+            this.groupBox5.Size = new System.Drawing.Size(476, 230);
             this.groupBox5.TabIndex = 7;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Chi tiết phiếu";
@@ -553,7 +552,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1051, 607);
+            this.ClientSize = new System.Drawing.Size(1051, 539);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox2);
