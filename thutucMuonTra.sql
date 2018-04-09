@@ -32,3 +32,18 @@ end
 go
 
 EXEC get_CTMcuaPM'0000000001'
+
+-- thủ tục thêm phiếu mượn
+create proc them_PMT
+	(@sopmt char(10),
+	@ngaylappmt date,
+	@ngayhtra date,
+	@ngaytra date,
+	@madg char(10),
+	@matt char(10))
+as
+begin
+	insert into PhieuMuonTra 
+	values(@soPMT,@ngaylappmt,@ngayhtra,@ngaytra,@madg,@matt)
+end
+go

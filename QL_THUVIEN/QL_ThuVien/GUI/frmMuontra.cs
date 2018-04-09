@@ -183,6 +183,7 @@ namespace QL_ThuVien.GUI
                 khoa_PMT();
                 LoadPMT();
                 btnSua.Enabled = false;
+                this.Hide();
             }
             else
                 MessageBox.Show("Mã độc giả sai hoặc độc giả không được mượn sách!");

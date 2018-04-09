@@ -11,7 +11,8 @@ using System.Windows.Forms;
 namespace QL_ThuVien.GUI
 {
 
-    
+   
+
     public partial class PhieuMuon : Form
     {
         public static string maDG = null;
@@ -22,14 +23,20 @@ namespace QL_ThuVien.GUI
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            PhieuMuon PM = new PhieuMuon();
+            PM.Close();
 
         }
 
+       
+
         
-        
+
         private void btnNext_Click(object sender, EventArgs e)
         {
-            QL_ThuVien.GUI.PhieuMuon PMT = new PhieuMuon();
+            
+
+            
 
         }
     }
