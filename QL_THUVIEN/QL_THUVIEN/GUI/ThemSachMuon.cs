@@ -65,7 +65,7 @@ namespace QL_ThuVien.GUI
                 }
                 else
                 {
-                    MessageBox.Show("Lỗi!");
+                    MessageBox.Show("Lỗi! Không mượn được!!");
                 }
 
                 

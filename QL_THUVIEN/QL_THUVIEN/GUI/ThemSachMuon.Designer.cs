@@ -47,7 +47,7 @@
             // 
             this.labErr.AutoSize = true;
             this.labErr.ForeColor = System.Drawing.Color.Red;
-            this.labErr.Location = new System.Drawing.Point(285, 107);
+            this.labErr.Location = new System.Drawing.Point(197, 104);
             this.labErr.Name = "labErr";
             this.labErr.Size = new System.Drawing.Size(0, 13);
             this.labErr.TabIndex = 64;
@@ -71,22 +71,22 @@
             this.dgvCTM.AllowUserToResizeRows = false;
             this.dgvCTM.BackgroundColor = System.Drawing.Color.White;
             this.dgvCTM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvCTM.Location = new System.Drawing.Point(29, 225);
+            this.dgvCTM.Location = new System.Drawing.Point(12, 225);
             this.dgvCTM.MultiSelect = false;
             this.dgvCTM.Name = "dgvCTM";
             this.dgvCTM.ReadOnly = true;
             this.dgvCTM.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvCTM.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCTM.Size = new System.Drawing.Size(478, 215);
+            this.dgvCTM.Size = new System.Drawing.Size(515, 201);
             this.dgvCTM.TabIndex = 62;
             this.dgvCTM.TabStop = false;
             // 
             // btnKetThuc
             // 
             this.btnKetThuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKetThuc.Location = new System.Drawing.Point(432, 446);
+            this.btnKetThuc.Location = new System.Drawing.Point(432, 444);
             this.btnKetThuc.Name = "btnKetThuc";
-            this.btnKetThuc.Size = new System.Drawing.Size(75, 34);
+            this.btnKetThuc.Size = new System.Drawing.Size(75, 36);
             this.btnKetThuc.TabIndex = 60;
             this.btnKetThuc.TabStop = false;
             this.btnKetThuc.Text = "Kết Thúc";
@@ -96,7 +96,7 @@
             // txtTienCoc
             // 
             this.txtTienCoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTienCoc.Location = new System.Drawing.Point(132, 134);
+            this.txtTienCoc.Location = new System.Drawing.Point(29, 131);
             this.txtTienCoc.MaxLength = 10;
             this.txtTienCoc.Name = "txtTienCoc";
             this.txtTienCoc.Size = new System.Drawing.Size(259, 21);
@@ -105,7 +105,7 @@
             // txtMCS
             // 
             this.txtMCS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMCS.Location = new System.Drawing.Point(132, 83);
+            this.txtMCS.Location = new System.Drawing.Point(29, 80);
             this.txtMCS.MaxLength = 10;
             this.txtMCS.Name = "txtMCS";
             this.txtMCS.Size = new System.Drawing.Size(259, 21);
@@ -116,7 +116,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(129, 65);
+            this.label12.Location = new System.Drawing.Point(26, 52);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(84, 15);
             this.label12.TabIndex = 59;
@@ -125,11 +125,11 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label13.Location = new System.Drawing.Point(126, 19);
+            this.label13.Location = new System.Drawing.Point(139, 17);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(278, 31);
+            this.label13.Size = new System.Drawing.Size(296, 33);
             this.label13.TabIndex = 58;
             this.label13.Text = "THÊM SÁCH MƯỢN";
             // 
@@ -145,7 +145,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(129, 114);
+            this.label4.Location = new System.Drawing.Point(26, 111);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 15);
             this.label4.TabIndex = 65;
@@ -155,7 +155,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(129, 168);
+            this.label1.Location = new System.Drawing.Point(26, 165);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 15);
             this.label1.TabIndex = 67;
@@ -164,7 +164,7 @@
             // txtTienTra
             // 
             this.txtTienTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTienTra.Location = new System.Drawing.Point(132, 193);
+            this.txtTienTra.Location = new System.Drawing.Point(29, 190);
             this.txtTienTra.MaxLength = 10;
             this.txtTienTra.Name = "txtTienTra";
             this.txtTienTra.Size = new System.Drawing.Size(259, 21);

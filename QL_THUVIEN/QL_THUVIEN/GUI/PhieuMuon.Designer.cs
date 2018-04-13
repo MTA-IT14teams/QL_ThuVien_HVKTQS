@@ -49,7 +49,7 @@
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(287, 380);
+            this.btnCancel.Location = new System.Drawing.Point(288, 404);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 32);
             this.btnCancel.TabIndex = 58;
@@ -61,7 +61,7 @@
             // btnNext
             // 
             this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.Location = new System.Drawing.Point(381, 380);
+            this.btnNext.Location = new System.Drawing.Point(382, 404);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(75, 32);
             this.btnNext.TabIndex = 57;
@@ -207,7 +207,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(503, 462);
+            this.ClientSize = new System.Drawing.Size(496, 462);
             this.Controls.Add(this.dtpNgayTra);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtMDG);

@@ -27,6 +27,8 @@ namespace QL_ThuVien.GUI
         {
             InitializeComponent();
         }
+
+         // Lấy dữ liệu và đổ vào bảng
         public static DataTable GetData(string proc)
         {
             SqlConnection conn = new SqlConnection(DTO.ConnectDatabase.ConnectionString);
@@ -37,6 +39,8 @@ namespace QL_ThuVien.GUI
             conn.Close();
             return dt;
         }
+
+        // thực thi thủ tục lấy ra độc giả có mã
         public static DataTable xuat_DGcoMa(string maDG)
         {
             return GetData("get_DGcoMa" + "'" + maDG + "'");
@@ -56,6 +60,8 @@ namespace QL_ThuVien.GUI
             return GetData("get_CTMcuaPM" + "'" + soPMT + "'");
             return xuat_CTMcuaPM(soPMT);
         }
+
+        // hiển thị đôc giả đã mượn sách 
         private void LoadDG()
         {
 
@@ -296,7 +302,7 @@ namespace QL_ThuVien.GUI
                         tinhTien_PMT(SoPMT);
                         clearCTM();
                         LoadPMT();
-                        MessageBox.Show("Sua thanh cong");
+                        MessageBox.Show("Sửa  thành công!!");
                     }
                     
                 }
@@ -378,7 +384,7 @@ namespace QL_ThuVien.GUI
                         tinhTien_PMT(SoPMT);
                         LoadCTM();
                         LoadPMT();
-                        MessageBox.Show("Tra thanh cong");
+                        MessageBox.Show("Đã trả thành công!!!");
                         ChiTietMuon.soPMT = txtSoPMT.Text.Trim();
                         ChiTietMuon.maDG = txtMDG2.Text.Trim();
                         ChiTietMuon.ngayLap = dateLap.Value.Year.ToString() + "-" + dateLap.Value.Month.ToString() + "-" + dateLap.Value.Day.ToString();
@@ -393,7 +399,7 @@ namespace QL_ThuVien.GUI
             }
             catch(Exception ex)
             {
-                MessageBox.Show("Không trả được");
+                MessageBox.Show("Không trả được!!!");
             }
         }
     }
