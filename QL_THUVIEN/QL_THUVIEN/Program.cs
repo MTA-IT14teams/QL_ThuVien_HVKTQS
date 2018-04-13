@@ -42,14 +42,15 @@ namespace QL_ThuVien
                 DTO.ConnectDatabase.SeverName = sname;
                 DTO.ConnectDatabase.DatabaseName = dbname;
                 
-                if (uname == null)
+                if (uname == "")
                 {
                     DTO.ConnectDatabase.WindowAuthentication = true;
-                    //DTO.ConnectDatabase.TaoChuoiKetNoi();
                 }
                 else
                 {
-                    DTO.ConnectDatabase.WindowAuthentication = true; 
+                    DTO.ConnectDatabase.WindowAuthentication = false;
+                    DTO.ConnectDatabase.UserName = uname;
+                    DTO.ConnectDatabase.PassWord = pass;
                 }
                 DTO.ConnectDatabase.TaoChuoiKetNoi();
 
@@ -69,17 +70,9 @@ namespace QL_ThuVien
                 }
                 catch(Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("Kiểm tra lại thông tin kết nối và ấn OK để thiết lập lại!\n Eror: " + ex.Message);
                 }
             }
-
-
-
-
-
-
-
-
 
             Application.Run(new GUI.frmConnectDatabase());
         }

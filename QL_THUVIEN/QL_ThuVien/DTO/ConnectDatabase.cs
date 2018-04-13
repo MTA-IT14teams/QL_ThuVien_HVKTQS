@@ -28,7 +28,7 @@ namespace QL_ThuVien.DTO
             }
             else
             {
-                temp = temp + ";Integrated Security = false; User ID= " + UserName + ";" + "Password =" + PassWord;
+                temp = temp + ";Persist Security Info=True; User ID = " + UserName + ";" + "Password = " + PassWord;
             }
             ConnectionString = temp;
         }

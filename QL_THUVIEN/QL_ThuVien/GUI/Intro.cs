@@ -26,9 +26,36 @@ namespace QL_ThuVien.GUI
                 label2.ForeColor = Color.Red;
             }
                
-            else
-                if (label2.Left <= 0) { direction = 1; label2.ForeColor = Color.Blue; }
-                
+            else if (label2.Left <= 0) 
+            { 
+                direction = 1; 
+                label2.ForeColor = Color.Blue; 
+            }
+
+            if (label2.Left < 150)
+            {
+                label2.ForeColor = Color.Red;
+            }
+            else if (label2.Left < 300)
+            {
+                label2.ForeColor = Color.Blue; 
+            }
+            else if (label2.Left < 450)
+            {
+                label2.ForeColor = Color.AliceBlue;
+            }
+            else if (label2.Left < 600)
+            {
+                label2.ForeColor = Color.DarkGreen;
+            }
+            else if (label2.Left < 750)
+            {
+                label2.ForeColor = Color.HotPink;
+            }
+            else if (label2.Left < 800)
+            {
+                label2.ForeColor = Color.MintCream;
+            }
 
             label2.Left = label2.Left + (7 * direction);
         }
