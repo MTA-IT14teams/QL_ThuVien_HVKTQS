@@ -130,6 +130,9 @@
   <data name="if_data_transport_44670" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_data_transport_44670.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="if_sign-info_299086" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_sign-info_299086.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="if_applications-system_118839" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_applications-system_118839.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,7 +142,22 @@
   <data name="if_library_49592" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_library_49592.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_sign-info_299086" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_sign-info_299086.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1Them" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1Them.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2Sua" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2Sua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3Xoa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3Xoa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="find (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\find (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Luu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Luu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="undo (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\undo (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
