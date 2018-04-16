@@ -50,8 +50,9 @@ namespace QL_ThuVien.GUI
                     {
                         File.Delete("info.ini");
                     }
-                    GUI.frmMain m = new frmMain();
                     this.Hide();
+                    GUI.frmMain m = new frmMain();
+
                     m.ShowDialog();
                 }
                 else

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Threading;
 
 namespace QL_ThuVien.GUI
 {
@@ -15,7 +16,18 @@ namespace QL_ThuVien.GUI
     {
         public frmMain()
         {
+            Thread t = new Thread(new ThreadStart(Splash));
+            t.Start();
             InitializeComponent();
+            Thread.Sleep(1500);
+            t.Abort();
+            this.ShowDialog();
+        }
+
+        void Splash()
+        {
+            GUI.flash f = new GUI.flash();
+            f.ShowDialog();
         }
 
         private void frmMain_FormClosed(object sender, FormClosedEventArgs e)

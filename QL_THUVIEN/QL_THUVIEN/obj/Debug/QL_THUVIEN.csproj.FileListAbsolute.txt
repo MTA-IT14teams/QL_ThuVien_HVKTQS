@@ -48,3 +48,4 @@ C:\Users\vuman\Desktop\Github\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\
 C:\Users\vuman\Desktop\Github\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmMuontra.resources
 C:\Users\vuman\Desktop\Github\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.PhieuMuon.resources
 C:\Users\vuman\Desktop\Github\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.ThemSachMuon.resources
+C:\Users\vuman\Desktop\Github\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.flash.resources

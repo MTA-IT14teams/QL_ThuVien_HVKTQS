@@ -75,11 +75,11 @@
             this.tscboTieuDeTK = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.tstxtTuKhoa = new System.Windows.Forms.ToolStripTextBox();
+            this.tsbtnTimKiem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.tsbtnTimKiem = new System.Windows.Forms.ToolStripButton();
             this.btnThem = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTS)).BeginInit();
@@ -144,7 +144,7 @@
             // 
             // btnHuy
             // 
-            //this.btnHuy.Image = global::QL_ThuVien.Properties.Resources.undo__3_;
+            this.btnHuy.Image = global::QL_ThuVien.Properties.Resources.undo__3_;
             this.btnHuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHuy.Location = new System.Drawing.Point(526, 278);
             this.btnHuy.Name = "btnHuy";
@@ -157,7 +157,7 @@
             // 
             // btnLuu
             // 
-           // this.btnLuu.Image = global::QL_ThuVien.Properties.Resources.Luu;
+            this.btnLuu.Image = global::QL_ThuVien.Properties.Resources._3Xoa;
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLuu.Location = new System.Drawing.Point(406, 278);
             this.btnLuu.Name = "btnLuu";
@@ -170,7 +170,7 @@
             // 
             // btnXoa
             // 
-            //this.btnXoa.Image = global::QL_ThuVien.Properties.Resources._3Xoa;
+            this.btnXoa.Image = global::QL_ThuVien.Properties.Resources._3Xoa;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXoa.Location = new System.Drawing.Point(274, 278);
             this.btnXoa.Name = "btnXoa";
@@ -183,7 +183,7 @@
             // 
             // btnSua
             // 
-            //this.btnSua.Image = global::QL_ThuVien.Properties.Resources._2Sua;
+            this.btnSua.Image = global::QL_ThuVien.Properties.Resources._2Sua;
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSua.Location = new System.Drawing.Point(142, 278);
             this.btnSua.Name = "btnSua";
@@ -528,6 +528,15 @@
             this.tstxtTuKhoa.Size = new System.Drawing.Size(200, 25);
             this.tstxtTuKhoa.TextChanged += new System.EventHandler(this.tstxtTuKhoa_TextChanged);
             // 
+            // tsbtnTimKiem
+            // 
+            this.tsbtnTimKiem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbtnTimKiem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbtnTimKiem.Name = "tsbtnTimKiem";
+            this.tsbtnTimKiem.Size = new System.Drawing.Size(23, 22);
+            this.tsbtnTimKiem.Text = "Tìm Kiếm";
+            this.tsbtnTimKiem.Click += new System.EventHandler(this.tsbtnTimKiem_Click);
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -564,19 +573,9 @@
             this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
-            // tsbtnTimKiem
-            // 
-            this.tsbtnTimKiem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            //this.tsbtnTimKiem.Image = global::QL_ThuVien.Properties.Resources.find__1_;
-            this.tsbtnTimKiem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbtnTimKiem.Name = "tsbtnTimKiem";
-            this.tsbtnTimKiem.Size = new System.Drawing.Size(23, 22);
-            this.tsbtnTimKiem.Text = "Tìm Kiếm";
-            this.tsbtnTimKiem.Click += new System.EventHandler(this.tsbtnTimKiem_Click);
-            // 
             // btnThem
             // 
-            //this.btnThem.Image = global::QL_ThuVien.Properties.Resources._1Them;
+            this.btnThem.Image = global::QL_ThuVien.Properties.Resources._1Them;
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThem.Location = new System.Drawing.Point(10, 278);
             this.btnThem.Name = "btnThem";
