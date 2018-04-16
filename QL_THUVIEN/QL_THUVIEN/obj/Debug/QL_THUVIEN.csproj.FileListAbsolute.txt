@@ -24,7 +24,6 @@ C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\
 C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmDocGia.resources
 C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmLogin.resources
 C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmMain.resources
-C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmMuontra.resources
 C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.Intro.resources
 C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.Properties.Resources.resources
 C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.csproj.GenerateResource.Cache
@@ -98,3 +97,6 @@ E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\
 E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.ThemSachMuon.resources
 E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.Properties.Resources.resources
 E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.csproj.GenerateResource.Cache
+C:\Users\vuman\Desktop\Github\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.ChiTietMuon.resources
+C:\Users\vuman\Desktop\Github\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.PhieuMuon.resources
+C:\Users\vuman\Desktop\Github\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.ThemSachMuon.resources
