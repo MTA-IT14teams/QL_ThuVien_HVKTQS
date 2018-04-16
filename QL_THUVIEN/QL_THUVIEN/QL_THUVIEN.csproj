@@ -47,11 +47,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTO\ConnectDatabase.cs" />
+    <Compile Include="DTO\MuonSach.cs" />
+    <Compile Include="GUI\ChiTietMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChiTietMuon.Designer.cs">
+      <DependentUpon>ChiTietMuon.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmConnectDatabase.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\frmConnectDatabase.Designer.cs">
       <DependentUpon>frmConnectDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmDauSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmDauSach.designer.cs">
+      <DependentUpon>frmDauSach.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmDocGia.cs">
       <SubType>Form</SubType>
@@ -71,16 +84,52 @@
     <Compile Include="GUI\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmMuontra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmMuontra.designer.cs">
+      <DependentUpon>frmMuontra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmTacGia.Designer.cs">
+      <DependentUpon>frmTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmTheLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmTheLoai.designer.cs">
+      <DependentUpon>frmTheLoai.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Intro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\Intro.Designer.cs">
       <DependentUpon>Intro.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\PhieuMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\PhieuMuon.designer.cs">
+      <DependentUpon>PhieuMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ThemSachMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ThemSachMuon.designer.cs">
+      <DependentUpon>ThemSachMuon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\ChiTietMuon.resx">
+      <DependentUpon>ChiTietMuon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmConnectDatabase.resx">
       <DependentUpon>frmConnectDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmDauSach.resx">
+      <DependentUpon>frmDauSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmDocGia.resx">
       <DependentUpon>frmDocGia.cs</DependentUpon>
@@ -91,8 +140,23 @@
     <EmbeddedResource Include="GUI\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmMuontra.resx">
+      <DependentUpon>frmMuontra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmTacGia.resx">
+      <DependentUpon>frmTacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmTheLoai.resx">
+      <DependentUpon>frmTheLoai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Intro.resx">
       <DependentUpon>Intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PhieuMuon.resx">
+      <DependentUpon>PhieuMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ThemSachMuon.resx">
+      <DependentUpon>ThemSachMuon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

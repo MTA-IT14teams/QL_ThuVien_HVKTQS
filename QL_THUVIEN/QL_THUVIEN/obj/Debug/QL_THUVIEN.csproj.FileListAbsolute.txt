@@ -41,3 +41,10 @@ E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.c
 E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.Intro.resources
 E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\bin\Debug\QL_ThuVien.exe
 E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\bin\Debug\QL_ThuVien.pdb
+C:\Users\vuman\Desktop\Github\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmDauSach.resources
+C:\Users\vuman\Desktop\Github\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmTacGia.resources
+C:\Users\vuman\Desktop\Github\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmTheLoai.resources
+C:\Users\vuman\Desktop\Github\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.ChiTietMuon.resources
+C:\Users\vuman\Desktop\Github\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmMuontra.resources
+C:\Users\vuman\Desktop\Github\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.PhieuMuon.resources
+C:\Users\vuman\Desktop\Github\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.ThemSachMuon.resources
