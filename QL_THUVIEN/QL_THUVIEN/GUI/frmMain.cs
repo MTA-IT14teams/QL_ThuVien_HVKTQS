@@ -36,10 +36,7 @@ namespace QL_ThuVien.GUI
 
         private void btnDauSach_Click(object sender, EventArgs e)
         {
-            GUI.frmDauSach ds = new frmDauSach();
-            ds.MdiParent = this;
-            ds.WindowState = FormWindowState.Maximized;
-            ds.Show();
+            
         }
 
         private void btnDocGia_Click(object sender, EventArgs e)
@@ -52,10 +49,7 @@ namespace QL_ThuVien.GUI
 
         private void btnMuonTra_Click(object sender, EventArgs e)
         {
-            GUI.frmMuontra mt = new frmMuontra();
-            mt.MdiParent = this;
-            mt.WindowState = FormWindowState.Maximized;
-            mt.Show();
+            
         }
 
         private void trangChủToolStripMenuItem_Click(object sender, EventArgs e)

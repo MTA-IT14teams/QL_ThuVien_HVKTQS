@@ -20,11 +20,9 @@ C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\bin\Debug\
 C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\bin\Debug\QL_ThuVien.pdb
 C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.csprojResolveAssemblyReference.cache
 C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmConnectDatabase.resources
-C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmDauSach.resources
 C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmDocGia.resources
 C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmLogin.resources
 C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmMain.resources
-C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmMuontra.resources
 C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.Intro.resources
 C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.Properties.Resources.resources
 C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.csproj.GenerateResource.Cache
