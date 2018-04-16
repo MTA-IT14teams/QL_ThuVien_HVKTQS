@@ -52,7 +52,10 @@ namespace QL_ThuVien.GUI
 
         private void btnMuonTra_Click(object sender, EventArgs e)
         {
-          
+            GUI.frmMuontra mt = new frmMuontra();
+            mt.MdiParent = this;
+            mt.WindowState = FormWindowState.Maximized;
+            mt.Show();
         }
 
         private void trangChủToolStripMenuItem_Click(object sender, EventArgs e)

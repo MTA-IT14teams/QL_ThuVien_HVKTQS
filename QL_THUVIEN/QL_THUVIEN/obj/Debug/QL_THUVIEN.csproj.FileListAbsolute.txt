@@ -24,6 +24,7 @@ C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\
 C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmDocGia.resources
 C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmLogin.resources
 C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmMain.resources
+C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmMuontra.resources
 C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.Intro.resources
 C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.Properties.Resources.resources
 C:\Users\vuman\Desktop\GITHUB\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.csproj.GenerateResource.Cache
@@ -42,61 +43,3 @@ E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.c
 E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.Intro.resources
 E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\bin\Debug\QL_ThuVien.exe
 E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\bin\Debug\QL_ThuVien.pdb
-E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.PhieuMuon.resources
-E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.ThemSachMuon.resources
-E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\bin\Debug\QL_ThuVien.exe.config
-E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.exe
-E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.pdb
-E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\bin\Debug\QL_ThuVien.exe
-E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\bin\Debug\QL_ThuVien.pdb
-E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.csprojResolveAssemblyReference.cache
-E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmConnectDatabase.resources
-E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmDauSach.resources
-E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmDocGia.resources
-E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmLogin.resources
-E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmMain.resources
-E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmMuontra.resources
-E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.Intro.resources
-E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.PhieuMuon.resources
-E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.ThemSachMuon.resources
-E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.Properties.Resources.resources
-E:\Nam_3_Kỳ2\Thuctapnhom\Thu vien\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.csproj.GenerateResource.Cache
-C:\Users\dell\Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\bin\Debug\QL_ThuVien.exe.config
-C:\Users\dell\Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.exe
-C:\Users\dell\Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.pdb
-C:\Users\dell\Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\bin\Debug\QL_ThuVien.exe
-C:\Users\dell\Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\bin\Debug\QL_ThuVien.pdb
-C:\Users\dell\Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.csprojResolveAssemblyReference.cache
-C:\Users\dell\Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmConnectDatabase.resources
-C:\Users\dell\Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmDauSach.resources
-C:\Users\dell\Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmDocGia.resources
-C:\Users\dell\Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmLogin.resources
-C:\Users\dell\Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmMain.resources
-C:\Users\dell\Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmMuontra.resources
-C:\Users\dell\Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.Intro.resources
-C:\Users\dell\Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.PhieuMuon.resources
-C:\Users\dell\Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.ThemSachMuon.resources
-C:\Users\dell\Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.Properties.Resources.resources
-C:\Users\dell\Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.csproj.GenerateResource.Cache
-C:\Users\dell\Desktop\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.ChiTietMuon.resources
-E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\bin\Debug\QL_ThuVien.exe.config
-E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.exe
-E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.pdb
-E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\bin\Debug\QL_ThuVien.exe
-E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\bin\Debug\QL_ThuVien.pdb
-E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.csprojResolveAssemblyReference.cache
-E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.ChiTietMuon.resources
-E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmConnectDatabase.resources
-E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmDauSach.resources
-E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmDocGia.resources
-E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmLogin.resources
-E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmMain.resources
-E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.frmMuontra.resources
-E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.Intro.resources
-E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.PhieuMuon.resources
-E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.ThemSachMuon.resources
-E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.Properties.Resources.resources
-E:\GitHub_Desktop\QL_ThuVien_HVKTQS\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.csproj.GenerateResource.Cache
-C:\Users\vuman\Desktop\Github\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.ChiTietMuon.resources
-C:\Users\vuman\Desktop\Github\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.PhieuMuon.resources
-C:\Users\vuman\Desktop\Github\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.ThemSachMuon.resources
