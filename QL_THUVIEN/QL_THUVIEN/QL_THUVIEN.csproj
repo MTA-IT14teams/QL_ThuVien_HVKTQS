@@ -47,6 +47,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTO\ConnectDatabase.cs" />
+    <Compile Include="DTO\MuonSach.cs" />
+    <Compile Include="GUI\ChiTietMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChiTietMuon.Designer.cs">
+      <DependentUpon>ChiTietMuon.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmConnectDatabase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,8 +96,23 @@
     <Compile Include="GUI\Intro.Designer.cs">
       <DependentUpon>Intro.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\PhieuMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\PhieuMuon.Designer.cs">
+      <DependentUpon>PhieuMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ThemSachMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ThemSachMuon.Designer.cs">
+      <DependentUpon>ThemSachMuon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\ChiTietMuon.resx">
+      <DependentUpon>ChiTietMuon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmConnectDatabase.resx">
       <DependentUpon>frmConnectDatabase.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +133,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Intro.resx">
       <DependentUpon>Intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PhieuMuon.resx">
+      <DependentUpon>PhieuMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ThemSachMuon.resx">
+      <DependentUpon>ThemSachMuon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
