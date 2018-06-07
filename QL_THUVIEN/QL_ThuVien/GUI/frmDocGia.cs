@@ -32,7 +32,7 @@ namespace QL_ThuVien.GUI
             SqlConnection conn = new SqlConnection(DTO.ConnectDatabase.ConnectionString);
             conn.Open();
 
-            string sql = "select *from DocGia";
+            string sql = "select *from DocGia" ;
             SqlCommand cmd = new SqlCommand(sql, conn);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
 
@@ -148,7 +148,8 @@ namespace QL_ThuVien.GUI
                 }
             }
             else
-            {//sua
+            //sua 
+            {
                 SqlConnection conn = new SqlConnection(DTO.ConnectDatabase.ConnectionString);
                 conn.Open();
 
