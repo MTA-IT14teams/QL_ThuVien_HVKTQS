@@ -70,3 +70,6 @@ D:\GitHub\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.Phieu
 D:\GitHub\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.GUI.ThemSachMuon.resources
 D:\GitHub\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.Properties.Resources.resources
 D:\GitHub\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.csproj.GenerateResource.Cache
+D:\Năm3moi\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\bin\Debug\QL_ThuVien.exe.config
+D:\Năm3moi\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.exe
+D:\Năm3moi\QL_ThuVien_HVKTQS\QL_THUVIEN\QL_ThuVien\obj\Debug\QL_ThuVien.pdb
