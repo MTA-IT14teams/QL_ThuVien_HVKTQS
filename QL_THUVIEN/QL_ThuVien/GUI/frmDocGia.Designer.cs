@@ -30,18 +30,29 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDocGia));
             this.grbThongTin = new System.Windows.Forms.GroupBox();
+            this.txtLoaiDG = new System.Windows.Forms.TextBox();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.cboGioiTinh = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtTenDG = new System.Windows.Forms.TextBox();
             this.txtMaDG = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtTe = new System.Windows.Forms.Label();
             this.lab = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dgvDocGia = new System.Windows.Forms.DataGridView();
+            this.maDG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenDG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaiDG = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -52,17 +63,6 @@
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
-            this.txtDiaChi = new System.Windows.Forms.TextBox();
-            this.txtLoaiDG = new System.Windows.Forms.TextBox();
-            this.maDG = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenDG = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loaiDG = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grbThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocGia)).BeginInit();
             this.SuspendLayout();
@@ -90,6 +90,20 @@
             this.grbThongTin.TabStop = false;
             this.grbThongTin.Text = "Thông Tin";
             // 
+            // txtLoaiDG
+            // 
+            this.txtLoaiDG.Location = new System.Drawing.Point(106, 384);
+            this.txtLoaiDG.Name = "txtLoaiDG";
+            this.txtLoaiDG.Size = new System.Drawing.Size(147, 20);
+            this.txtLoaiDG.TabIndex = 110;
+            // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.Location = new System.Drawing.Point(106, 267);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(147, 20);
+            this.txtDiaChi.TabIndex = 109;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -116,6 +130,15 @@
             this.label1.Size = new System.Drawing.Size(38, 19);
             this.label1.TabIndex = 104;
             this.label1.Text = "SDT";
+            // 
+            // dtpNgaySinh
+            // 
+            this.dtpNgaySinh.CustomFormat = "dd/MM/yyyy";
+            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgaySinh.Location = new System.Drawing.Point(106, 214);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(144, 20);
+            this.dtpNgaySinh.TabIndex = 103;
             // 
             // label9
             // 
@@ -163,6 +186,16 @@
             this.txtMaDG.Size = new System.Drawing.Size(147, 20);
             this.txtMaDG.TabIndex = 98;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(14, 159);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 19);
+            this.label4.TabIndex = 97;
+            this.label4.Text = "Giới Tính";
+            // 
             // txtTe
             // 
             this.txtTe.AutoSize = true;
@@ -186,11 +219,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Red;
             this.label5.Location = new System.Drawing.Point(8, 20);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 23);
+            this.label5.Size = new System.Drawing.Size(186, 31);
             this.label5.TabIndex = 96;
             this.label5.Text = "Quản lý độc giả";
             // 
@@ -210,6 +243,49 @@
             this.dgvDocGia.Name = "dgvDocGia";
             this.dgvDocGia.Size = new System.Drawing.Size(774, 503);
             this.dgvDocGia.TabIndex = 97;
+            // 
+            // maDG
+            // 
+            this.maDG.DataPropertyName = "maDG";
+            this.maDG.HeaderText = "Mã Độc Giả";
+            this.maDG.Name = "maDG";
+            // 
+            // TenDG
+            // 
+            this.TenDG.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenDG.DataPropertyName = "tenDG";
+            this.TenDG.HeaderText = "Tên Độc Giả";
+            this.TenDG.Name = "TenDG";
+            // 
+            // gioiTinh
+            // 
+            this.gioiTinh.DataPropertyName = "gioiTinh";
+            this.gioiTinh.HeaderText = "Giới Tính";
+            this.gioiTinh.Name = "gioiTinh";
+            // 
+            // ngaySinh
+            // 
+            this.ngaySinh.DataPropertyName = "ngaySinh";
+            this.ngaySinh.HeaderText = "Ngày Sinh";
+            this.ngaySinh.Name = "ngaySinh";
+            // 
+            // diaChi
+            // 
+            this.diaChi.DataPropertyName = "diaChi";
+            this.diaChi.HeaderText = "Địa Chỉ";
+            this.diaChi.Name = "diaChi";
+            // 
+            // SDT
+            // 
+            this.SDT.DataPropertyName = "SDT";
+            this.SDT.HeaderText = "Số Điện Thoại";
+            this.SDT.Name = "SDT";
+            // 
+            // loaiDG
+            // 
+            this.loaiDG.DataPropertyName = "loaiDG";
+            this.loaiDG.HeaderText = "Loại Độc Giả";
+            this.loaiDG.Name = "loaiDG";
             // 
             // btnHuy
             // 
@@ -348,82 +424,6 @@
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSua.UseVisualStyleBackColor = false;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(14, 159);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 19);
-            this.label4.TabIndex = 97;
-            this.label4.Text = "Giới Tính";
-            // 
-            // dtpNgaySinh
-            // 
-            this.dtpNgaySinh.CustomFormat = "dd/MM/yyyy";
-            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgaySinh.Location = new System.Drawing.Point(106, 214);
-            this.dtpNgaySinh.Name = "dtpNgaySinh";
-            this.dtpNgaySinh.Size = new System.Drawing.Size(144, 20);
-            this.dtpNgaySinh.TabIndex = 103;
-            // 
-            // txtDiaChi
-            // 
-            this.txtDiaChi.Location = new System.Drawing.Point(106, 267);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(147, 20);
-            this.txtDiaChi.TabIndex = 109;
-            // 
-            // txtLoaiDG
-            // 
-            this.txtLoaiDG.Location = new System.Drawing.Point(106, 384);
-            this.txtLoaiDG.Name = "txtLoaiDG";
-            this.txtLoaiDG.Size = new System.Drawing.Size(147, 20);
-            this.txtLoaiDG.TabIndex = 110;
-            // 
-            // maDG
-            // 
-            this.maDG.DataPropertyName = "maDG";
-            this.maDG.HeaderText = "Mã Độc Giả";
-            this.maDG.Name = "maDG";
-            // 
-            // TenDG
-            // 
-            this.TenDG.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenDG.DataPropertyName = "tenDG";
-            this.TenDG.HeaderText = "Tên Độc Giả";
-            this.TenDG.Name = "TenDG";
-            // 
-            // gioiTinh
-            // 
-            this.gioiTinh.DataPropertyName = "gioiTinh";
-            this.gioiTinh.HeaderText = "Giới Tính";
-            this.gioiTinh.Name = "gioiTinh";
-            // 
-            // ngaySinh
-            // 
-            this.ngaySinh.DataPropertyName = "ngaySinh";
-            this.ngaySinh.HeaderText = "Ngày Sinh";
-            this.ngaySinh.Name = "ngaySinh";
-            // 
-            // diaChi
-            // 
-            this.diaChi.DataPropertyName = "diaChi";
-            this.diaChi.HeaderText = "Địa Chỉ";
-            this.diaChi.Name = "diaChi";
-            // 
-            // SDT
-            // 
-            this.SDT.DataPropertyName = "SDT";
-            this.SDT.HeaderText = "Số Điện Thoại";
-            this.SDT.Name = "SDT";
-            // 
-            // loaiDG
-            // 
-            this.loaiDG.DataPropertyName = "loaiDG";
-            this.loaiDG.HeaderText = "Loại Độc Giả";
-            this.loaiDG.Name = "loaiDG";
             // 
             // frmDocGia
             // 
