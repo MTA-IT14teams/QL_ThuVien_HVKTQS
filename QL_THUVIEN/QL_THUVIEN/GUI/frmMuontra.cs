@@ -287,15 +287,6 @@ namespace QL_ThuVien.GUI
                 if (nhay == 1)//nut btnSua hoat dong
                 {
                     SoPMT = txtSoPMT.Text.Trim();
-                    //MaDG = txtMDG2.Text.Trim();
-                    //MaTT = txtMTT.Text.Trim();
-                    //NgayLap = dateLap.Value.Year.ToString() + "-" +
-                    //    dateLap.Value.Month.ToString() + "-" + dateLap.Value.Day.ToString();
-                    //NgayHTra = dateHtra.Value.Year.ToString() + "-" +
-                    //    dateHtra.Value.Month.ToString() + "-" + dateHtra.Value.Day.ToString();
-                    //NgayTra = dateTra.Value.Year.ToString() + "-" +
-                    //    dateTra.Value.Month.ToString() + "-" + dateTra.Value.Day.ToString();
-
                    
                     if (sua_PMT()==1)
                     {
@@ -324,11 +315,25 @@ namespace QL_ThuVien.GUI
                 LoadCTM();
             }
         }
+        private void show_cboThuThu()
+        {
+            SqlConnection conn = new SqlConnection(DTO.ConnectDatabase.ConnectionString);
+            conn.Open();
+            string strSQL = "select * from ThuThu";
+            DataTable dt = new DataTable();
+            SqlDataAdapter sqlDa = new SqlDataAdapter(strSQL, conn);
+            sqlDa.Fill(dt);
+            cboTenThuThu.DataSource = dt;
+            cboTenThuThu.DisplayMember = "tenTT";
+            cboTenThuThu.ValueMember = "maTT";
+            conn.Close();
+        }
         private void btnSua_Click(object sender, EventArgs e)
         {
             nhay = 1;
             btnXoa.Text = "Hủy";
             mo_PMT();
+            show_cboThuThu();
         }
         private void btnXoa_Click(object sender, EventArgs e)
         {
@@ -401,6 +406,68 @@ namespace QL_ThuVien.GUI
             {
                 MessageBox.Show("Không trả được!!!");
             }
+        }
+        public static void ExportToExcel(DataGridView dtgr)
+        {
+            // Creating a Excel object.
+            Microsoft.Office.Interop.Excel._Application excel = new Microsoft.Office.Interop.Excel.Application();
+            Microsoft.Office.Interop.Excel._Workbook workbook = excel.Workbooks.Add(Type.Missing);
+            Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
+
+            try
+            {
+                worksheet = workbook.ActiveSheet;
+
+                worksheet.Name = "ExportedFromDatGrid";
+
+                int cellRowIndex = 1;
+                int cellColumnIndex = 1;
+
+                //Loop through each row and read value from each column.
+                for (int i = -1; i < dtgr.Rows.Count - 1; i++)
+                {
+                    for (int j = 0; j < dtgr.Columns.Count; j++)
+                    {
+                        // Excel index starts from 1,1. As first Row would have the Column headers, adding a condition check.
+                        if (cellRowIndex == 1)
+                        {
+                            worksheet.Cells[cellRowIndex, cellColumnIndex] = dtgr.Columns[j].HeaderText;
+                        }
+                        else
+                        {
+                            worksheet.Cells[cellRowIndex, cellColumnIndex] = dtgr.Rows[i].Cells[j].Value.ToString();
+                        }
+                        cellColumnIndex++;
+                    }
+                    cellColumnIndex = 1;
+                    cellRowIndex++;
+                }
+                worksheet.Columns.AutoFit();
+                //Getting the location and file name of the excel to save from user.
+                SaveFileDialog saveDialog = new SaveFileDialog();
+                saveDialog.Filter = "Excel files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                saveDialog.FilterIndex = 2;
+
+                if (saveDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    workbook.SaveAs(saveDialog.FileName);
+                    MessageBox.Show("Export Successful");
+                }
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                excel.Quit();
+                workbook = null;
+                excel = null;
+            }
+        }
+        private void btnXuatExcel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

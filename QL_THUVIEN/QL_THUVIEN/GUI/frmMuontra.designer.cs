@@ -314,44 +314,47 @@
             // 
             // btnXoa
             // 
+            this.btnXoa.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnXoa.Location = new System.Drawing.Point(390, 171);
+            this.btnXoa.Location = new System.Drawing.Point(351, 175);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(65, 60);
             this.btnXoa.TabIndex = 22;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.UseVisualStyleBackColor = false;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
+            this.btnSua.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSua.Location = new System.Drawing.Point(280, 171);
+            this.btnSua.Location = new System.Drawing.Point(280, 175);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(65, 60);
             this.btnSua.TabIndex = 22;
             this.btnSua.Text = "Sửa";
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.UseVisualStyleBackColor = false;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnGhiNhan
             // 
+            this.btnGhiNhan.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btnGhiNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGhiNhan.Image = ((System.Drawing.Image)(resources.GetObject("btnGhiNhan.Image")));
             this.btnGhiNhan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnGhiNhan.Location = new System.Drawing.Point(49, 171);
+            this.btnGhiNhan.Location = new System.Drawing.Point(68, 174);
             this.btnGhiNhan.Name = "btnGhiNhan";
-            this.btnGhiNhan.Size = new System.Drawing.Size(65, 60);
+            this.btnGhiNhan.Size = new System.Drawing.Size(73, 60);
             this.btnGhiNhan.TabIndex = 22;
             this.btnGhiNhan.Text = "Ghi nhận";
             this.btnGhiNhan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnGhiNhan.UseVisualStyleBackColor = true;
+            this.btnGhiNhan.UseVisualStyleBackColor = false;
             this.btnGhiNhan.Click += new System.EventHandler(this.btnGhiNhan_Click);
             // 
             // dateTra
@@ -383,7 +386,7 @@
             // 
             // txtMTT
             // 
-            this.txtMTT.Location = new System.Drawing.Point(280, 142);
+            this.txtMTT.Location = new System.Drawing.Point(271, 144);
             this.txtMTT.MaxLength = 10;
             this.txtMTT.Name = "txtMTT";
             this.txtMTT.Size = new System.Drawing.Size(175, 21);
@@ -483,6 +486,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1077, 539);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox2);

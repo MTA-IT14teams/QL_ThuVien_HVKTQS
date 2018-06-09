@@ -14,6 +14,7 @@ namespace QL_ThuVien.GUI
 {
     public partial class frmMain : Form
     {
+     
         public frmMain()
         {
             Thread t = new Thread(new ThreadStart(Splash));
@@ -60,6 +61,7 @@ namespace QL_ThuVien.GUI
             dg.MdiParent = this;
             dg.WindowState = FormWindowState.Maximized;
             dg.Show();
+            
         }
 
         private void btnMuonTra_Click(object sender, EventArgs e)
@@ -68,6 +70,7 @@ namespace QL_ThuVien.GUI
             mt.MdiParent = this;
             mt.WindowState = FormWindowState.Maximized;
             mt.Show();
+            mt.namelogin(DTO.ConnectDatabase.NameLogin);
         }
 
         private void trangChủToolStripMenuItem_Click(object sender, EventArgs e)
