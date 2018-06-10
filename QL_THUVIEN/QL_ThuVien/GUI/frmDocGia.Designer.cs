@@ -85,7 +85,7 @@
             this.grbThongTin.Controls.Add(this.lab);
             this.grbThongTin.Location = new System.Drawing.Point(1, 92);
             this.grbThongTin.Name = "grbThongTin";
-            this.grbThongTin.Size = new System.Drawing.Size(273, 503);
+            this.grbThongTin.Size = new System.Drawing.Size(273, 480);
             this.grbThongTin.TabIndex = 0;
             this.grbThongTin.TabStop = false;
             this.grbThongTin.Text = "Thông Tin";
@@ -219,11 +219,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Red;
             this.label5.Location = new System.Drawing.Point(8, 20);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(186, 31);
+            this.label5.Size = new System.Drawing.Size(191, 33);
             this.label5.TabIndex = 96;
             this.label5.Text = "Quản lý độc giả";
             // 
@@ -241,7 +241,7 @@
             this.loaiDG});
             this.dgvDocGia.Location = new System.Drawing.Point(280, 92);
             this.dgvDocGia.Name = "dgvDocGia";
-            this.dgvDocGia.Size = new System.Drawing.Size(774, 503);
+            this.dgvDocGia.Size = new System.Drawing.Size(774, 480);
             this.dgvDocGia.TabIndex = 97;
             // 
             // maDG
